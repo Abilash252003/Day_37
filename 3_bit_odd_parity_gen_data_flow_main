@@ -1,0 +1,15 @@
+
+///100 days of RTL///
+
+///Abilash P///
+
+///3-bit Odd parity Generator in data flow modeling///
+
+module bit_3_odd_parity_gen (A, Y);
+
+input  [2:0]A;
+output Y;
+
+assign Y = ~(A[2] ^ A[1] ^A[0]);
+
+endmodule
